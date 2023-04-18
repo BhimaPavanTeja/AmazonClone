@@ -12,15 +12,24 @@
     <div class="nav container-fluid ps-4 pe-4 text-white bg-black">
         <img class="logo" src="https://d24v5oonnj2ncn.cloudfront.net/wp-content/uploads/2018/10/16030301/Amazon-Logo-Black.jpg">
         <div>
-            <h6>hello</h6>
-            <p>select your address</p>
+            <h6 id="space" class="d-none d-sm-block">Hello</h6>
+            <p class="d-none d-sm-block"><img src="placeholder.png" id="location">select your address</p>
         </div>
 
         <div class="search-bar bg-white">
-
+            <select>
+                <option>All</option>
+                <option>Electronics</option>
+                <option>Mobiles</option>
+                <option>Laptops</option>
+                <option>Groceries</option>
+            </select>
+            <input type="text" placeholder="Search Amazon">
+            <img src="loupe.png" id="img-search" class="d-none d-sm-block">
+            
         </div>
         <div>
-            <h6>hello Sign-in</h6>
+            <h6>Hello Sign-in</h6>
             <p>Accounts & info</p>
         </div>
         <div>
@@ -32,21 +41,25 @@
         
     </div>
 
-    <div class="nav bg-secondary text-white ps-4 pe-4">
+    <div class="nav text-white ps-4 pe-4 d-none d-sm-block" id="nav-2">
         <a href="#">Home</a>
         <a href="#">Electronics</a>
         <a href="#">Home Decors</a>
-        <a href="#">Offices</a>
+        <a href="#">Office Chairs</a>
         <a href="#">Men</a>
         <a href="#">Women</a>
-        <a href="#">Clothing</a>
+        <a href="#">Dresses</a>
         <a href="#">Sports</a>
+        <a href="#">Toys</a>
+        <a href="#">Decoration</a>
+        <a href="#">Men's Wear</a>
+        <a href="#">Kid's wear</a>
+        <a href="#">Rewards</a>
+        <a href="#">Tabs</a>
+        <a href="#">Utensils</a>
         <a href="#">Groceries</a>
         <a href="#">Pharmacy</a>
-        <a href="#">Snacks</a>
-        <a href="#">Offers</a>
-        <a href="#">Gifts</a>
-        <a href="#">Laptops</a>
+        <a href="#">Cool Drinks</a>
     </div>
 
 
@@ -62,22 +75,26 @@
           <div class="carousel-item">
             <img src="https://m.media-amazon.com/images/I/61DUO0NqyyL._SX3000_.jpg" class="d-block w-100" alt="...">
           </div>
+          <div class="carousel-item">
+            <img src="https://m.media-amazon.com/images/I/61jovjd+f9L._SX3000_.jpg" class="d-block w-100" alt="...">
+          </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
       </div>
 
 
 
       <div class="d-flex categories-selection flex-wrap">
-
-
+        <div class=".col-lg-12 .col-sm-6 shadow bg-white .d-none d-sm-block d-md-none d-lg-none">
+        <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery.<a href="#" id="links"> Click here to go to amazon.in</a></p>
+    </div>
         <div class="col-lg-3 col-sm-6 col-12  shadow bg-white">
             <h4>Up to 50% off | products and the other items | Amazon store</h4>
             <div class="d-flex">
@@ -91,53 +108,96 @@
         </div>
 
         <div class="col-lg-3 col-sm-6 col-12 shadow bg-white">
-            <h4>Up to 50% off | products and the other items | Amazon store</h4>
+            <h4>Get fit at home</h4>
             <div class="d-flex">
-                <img class="w-50 p-2" src="https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_186x116_home_B08RCCP3HV_01.23._SY116_CB619238939_.jpg" id="imagesk">
-                <img class="w-50 p-2" src="https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_186x116_LP-HP_B08MYX5Q2W_01.23._SY116_CB619238939_.jpg" id="imagesk">
+                <img class="w-50 p-2" src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/September/DashboardCards/Fuji_Dash_Fitness_1X._SY304_CB639748186_.jpg" id="imagesk">
+                <img class="w-50 p-2" src="https://images-na.ssl-images-amazon.com/images/G/01/events/GFAH/GWDesktop_SingleImageCard_fitathome_1x._SY304_CB434924743_.jpg" id="imagesk">
             </div>
             <div class="d-flex">
-                <img class="w-50 p-2" src="https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_186x116_kitchen_B0126LMDFK_01.23._SY116_CB619238939_.jpg" id="imagesk">
-                <img class="w-50 p-2" src="https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_186x116_health-beauty_B07662GN57_01.23._SY116_CB619238939_.jpg" id="imagesk">
-            </div>
-        </div>
-
-        <div class="col-lg-3 col-sm-6 col-12  shadow bg-white">
-            <h4>Up to 50% off | products and the other items | Amazon store</h4>
-            <div class="d-flex">
-                <img class="w-50 p-2" src="https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_186x116_home_B08RCCP3HV_01.23._SY116_CB619238939_.jpg" id="imagesk">
-                <img class="w-50 p-2" src="https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_186x116_LP-HP_B08MYX5Q2W_01.23._SY116_CB619238939_.jpg" id="imagesk">
-            </div>
-            <div class="d-flex">
-                <img class="w-50 p-2" src="https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_186x116_kitchen_B0126LMDFK_01.23._SY116_CB619238939_.jpg" id="imagesk">
-                <img class="w-50 p-2" src="https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_186x116_health-beauty_B07662GN57_01.23._SY116_CB619238939_.jpg" id="imagesk">
+                <img class="w-50 p-2" src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/September/DashboardCards/Fuji_Dash_Toys_1X._SY304_CB639759658_.jpg" id="imagesk">
+                <img class="w-50 p-2" src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/September/DashboardCards/Fuji_Desktop_Dash_Kindle_1x._SY304_CB639752818_.jpg" id="imagesk">
             </div>
         </div>
 
         <div class="col-lg-3 col-sm-6 col-12  shadow bg-white">
-            <h4>Up to 50% off | products and the other items | Amazon store</h4>
+            <h4>Special Offers | 30% Off</h4>
             <div class="d-flex">
-                <img class="w-50 p-2" src="https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_186x116_home_B08RCCP3HV_01.23._SY116_CB619238939_.jpg" id="imagesk">
-                <img class="w-50 p-2" src="https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_186x116_LP-HP_B08MYX5Q2W_01.23._SY116_CB619238939_.jpg" id="imagesk">
+                <img class="w-50 p-2" src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2022/February/DashboardCards/Fuji_dash_dress_1X._SY304_CB626369146_.jpg" id="imagesk">
+                <img class="w-50 p-2" src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/September/DashboardCards/Fuji_Dash_SmartWatch_1X._SY304_CB639922137_.jpg" id="imagesk">
             </div>
             <div class="d-flex">
-                <img class="w-50 p-2" src="https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_186x116_kitchen_B0126LMDFK_01.23._SY116_CB619238939_.jpg" id="imagesk">
-                <img class="w-50 p-2" src="https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_186x116_health-beauty_B07662GN57_01.23._SY116_CB619238939_.jpg" id="imagesk">
+                <img class="w-50 p-2" src="https://images-na.ssl-images-amazon.com/images/G/01/home/THILGMA/SpringEvent2023/XCM_CUTTLE_1559454_3018199_379x304_1X_en_US._SY304_CB592739737_.jpg" id="imagesk">
+                <img class="w-50 p-2" src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Laptops_379x304_1X_en_US._SY304_CB418608471_.jpg" id="imagesk">
             </div>
         </div>
 
+        <div class="col-lg-2 col-sm-5 col-12  shadow bg-white">
+            <h4>Gaming Accessories</h4>
+            <div class="d-flex">
+                <img class="w-50 p-2" src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Headset_1x._SY116_CB667159060_.jpg" id="imagesk">
+                <img class="w-50 p-2" src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Keyboard_1x._SY116_CB667159063_.jpg" id="imagesk">
+            </div>
+            <div class="d-flex">
+                <img class="w-50 p-2" src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Mouse_1x._SY116_CB667159063_.jpg" id="imagesk">
+                <img class="w-50 p-2" src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Chair_1x._SY116_CB667159060_.jpg" id="imagesk">
+            </div>
+        </div>
 
 
       </div>
+
+      <div class="d-flex categories-selection flex-wrap">
+      <div class="col-lg-3 col-sm-6 col-12  shadow bg-white" id="gap">
+        <h4>Beauty Picks</h4>
+        <div class="d-flex">
+            <img class="w-100 p-2" src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Beauty_1x._SY304_CB432774351_.jpg" id="imagesk">
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-sm-6 col-12  shadow bg-white" id="gap">
+        <h4>Electronics</h4>
+        <div class="d-flex">
+            <img class="w-100 p-2" src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Electronics_1x._SY304_CB432774322_.jpg" id="imagesk">
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-sm-6 col-12  shadow bg-white" id="gap">
+        <h4>Create with strip lights</h4>
+        <div class="d-flex">
+            <img class="w-100 p-2" src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_StripLighting_379x304_1X_en_US._SY304_CB418597476_.jpg" id="imagesk">
+        </div>
+    </div>
+
+    <div class="col-lg-2 col-sm-6 col-12  shadow bg-white" id="gap">
+        <h4>Deals in Tools and Home Improvement</h4>
+        <div class="d-flex">
+            <img class="w-100 p-2" src="https://images-na.ssl-images-amazon.com/images/G/01/home/THILGMA/Holiday2022/Graphics/XCM_CUTTLE_1475305_2610205_379x304_1X_en_US._SY304_CB608600856_.jpg" id="imagesk">
+        </div>
+    </div>
+
+
+    </div>
 </body>
 <style>
+    .logo {
+        margin: 0 auto;
+    }
+    body {
+        background-color: rgb(232, 232, 236);
+    }
+    #space {
+        margin-left: 15px;
+    }
+    #location {
+        height: 25px;
+    }
     .logo {
         height: 80px;
         width: auto;
     }
     .search-bar {
         height: 40px;
-        width: 600px;
+        width: 560px;
         margin-top: 20px;
         border-radius: 6px;
     }
@@ -146,6 +206,9 @@
         margin-left: 5px;
         height: 35px;
         width: auto;
+    }
+    .icon:hover {
+        cursor: pointer;
     }
     h1,h2,h3,h4,h5,h6 {
         margin-top: 10px;
@@ -157,17 +220,96 @@
         margin-right: 10px;
         margin-left: 10px;
     }
+    #nav-2 {
+        background-color: rgb(38, 38, 55);
+    }
     a {
         color: white;
         text-decoration: none;
-        padding: 10px;
-        font-weight: bold;
+        padding: 7px;
+    }
+    a:hover {
+        font-weight: 600;
     }
     .carousel-item {
         height: 300px;
     }
     #imagesk {
         border-radius: 10px;
+    }
+    select {
+        cursor: pointer;
+        height: 100%;
+        width: 10%;
+        background-color: rgb(194, 193, 191);
+        border-radius: 6px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border-style: none;
+    }
+    select:hover {
+        background-color: rgb(159, 162, 162);
+    }
+    option {
+        background-color: white;
+    }
+    input {
+        height: 100%;
+        width: 81.5%;
+        border-style: none;
+    }
+    #img-search {
+        float: right;
+        height: 100%;
+        width: 7%;
+        border-radius: 5px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        cursor: pointer;
+    }
+    .col-lg-3 {
+        margin: 10px;
+        margin-top: -50px;
+        z-index: 9999999;
+    }
+    .col-lg-2 {
+        margin: 10px;
+        margin-top: -50px;
+        z-index: 9999999;
+    }
+    .col-lg-11 {
+        margin: 0 auto;
+    }
+    #gap {
+        margin: 10px;
+    }
+
+    @media only screen and (max-width:500px) {
+        #links {
+            color: blue;
+        }
+      .search-bar {
+        width: 400px;
+        margin-top: 0px;
+      }
+      select {
+        width: 15%;
+      }
+      .carousel-item {
+        height: 180px;
+        width: 500px;
+      }
+      .col-lg-2 {
+        margin: 10px;
+        margin-left: 0px;
+      }
+      .col-lg-3 {
+        margin: 10px;
+        margin-left: 0px;
+      }
+      #gap {
+        margin-left: 0px;
+      }
     }
 </style>
 </html>
